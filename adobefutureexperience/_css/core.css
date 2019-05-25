@@ -1,0 +1,296 @@
+﻿@font-face {
+    font-family: "Bebas Bold";
+    src: url('../_font/BebasNeue Bold.ttf') format("truetype");
+}
+@font-face {
+    font-family: "Bebas Regular";
+    src: url('../_font/BebasNeue Regular.ttf') format("truetype");
+}
+@font-face {
+    font-family: "Bebas Light";
+    src: url('../_font/BebasNeue Light.ttf') format("truetype");
+}
+@font-face {
+    font-family: "Bebas Thin";
+    src: url('../_font/BebasNeue Thin.ttf') format("truetype");
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    width:100%;
+    height: 100%;
+    font-family: Arial,Helvetica,"Helvetica Neue",sans-serif;
+    color: #fff;
+    margin: 0;
+    background-color: #270A0C;
+    font-size: 1vw;
+}
+
+.bebas-bold { 
+    font-family: "Bebas Bold", Arial, sans-serif;
+}
+.bebas-light { 
+    font-family: "Bebas Light", Arial, sans-serif;
+}
+.bebas-thin { 
+    font-family: "Bebas Thin", Arial, sans-serif;
+}
+.bebas { 
+    font-family: "Bebas Regular", Arial, sans-serif;
+}
+
+a:link.nohighlight, a:visited.nohighlight, a:hover.nohighlight, a:active.nohighlight {
+    text-decoration: none;
+    border-bottom: 0 transparent solid;
+}
+
+.capitalize {
+    text-transform: uppercase;
+}
+
+.page {
+    /*display: table;*/
+    display: block;
+    width: 1px;
+    min-width: 100%;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    color: #fff;    
+    background-color: #000;
+    background: url(../_img/bgposter.jpg) no-repeat top center scroll; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.shader {
+    background-color: #000;
+    background: rgb(0, 0, 0); /* Fall-back for browsers that don't support rgba */
+    background: rgba(0, 0, 0, .20);
+}
+
+.logo-badge img.logo {
+    height: auto;
+    top: 0;
+    position: relative;
+    max-height: 6vw;
+}
+.logo-badge .left img.logo{
+    left: 3.3vw;
+}
+.logo-badge .right img.logo {
+    width: 4vw;
+    max-width: 112px;
+    right: 3.3vw;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro .intro-body #presentation_link {
+	text-decoration: underline;
+	color: inherit;
+}
+.intro .intro-body #presentation_link ~ small {
+	margin-left: 3px;
+	color: inherit;
+}
+
+.intro .brand-heading {
+    font-weight: bold;
+    font-size: 3.8vw;
+}
+
+.intro .agenda-body {
+    margin-top: 18px;
+}
+
+.shader .entry-form {
+    padding: 12px 0px;
+}
+
+.shader .entry-form iframe {
+    min-height: 340px;
+}
+
+.agenda-body .shader {
+    padding: 10px 50px 12px;
+}
+.agenda-body .brand-heading {
+    font-size: 7.25vw;
+}
+.agenda-body .brand-caption {
+    font-size: 2.5vw;
+}
+
+.agenda-date {
+    font-size: 4vw;
+}
+
+.agenda-address {
+    font-size: 1.65vw;
+}
+
+.agenda-separator .redhr {
+    background: url(../_img/redhr.png) repeat-x center center scroll;
+    padding: 1vw;
+    margin: 0 4vw;
+    height: 18px; 
+}
+
+.agenda-details {
+    padding-top: 20px;
+}
+.agenda-details table td {
+    vertical-align: top;
+    padding: 6px 0;
+    font-size: 1.8vw;
+}
+.agenda-details table td:nth-child(1) {
+    width: 108px;
+}
+
+.agenda-details table td:nth-child(2) {
+    width: 36px;
+}
+
+.notes {
+    margin-top: 16px;
+    margin-bottom: 28px;
+}
+.notes .header {
+    font-size: 1.8vw;    
+}
+.notes .note {
+    font-size: 1.2vw;
+    //padding: 0 50px;
+    color: #d4c9b9;
+}
+
+.getsocial {
+    font-size: 1.2vw;
+    color: #d4c9b9;
+}
+.getsocial .graphical {
+    margin-bottom: 12px;
+}
+/*
+.getsocial .row:nth-child(2) {
+    font-size: 2.1vw;
+}
+*/
+
+.tagline {
+    margin-top: 60px;
+    font-size: 2.1vw;
+}
+
+.bios {
+    margin-top: 40px;
+}
+.bios-title {
+    margin-bottom: 6px;
+    font-size: 2.1vw;
+}
+.bios .speaker {
+    margin-top: 42px;
+}
+.bios .bio-img {
+    margin: 0px 0px 8px 0px;
+}
+.bios .bio-img + figcaption {
+    margin-bottom: 16px;
+    font-size: 1.8vw; 
+}
+.bios .speaker-bio {
+    /*line-height: 2.3rem;*/
+    font-size: 1.2vw;
+    color: #d4c9b9;
+}
+
+.graphical-wb {
+    margin-top: 50px;
+}
+.graphical-wb img {
+    width: 250px;
+    max-width: 250px;
+    height: 96px;
+    max-height: 96px;	
+}
+
+.disclaimer-body {
+    margin-top: 80px;
+    padding: 0 5vw;
+    font-size: .55vw;
+}
+
+@media(max-width:767px) {
+    body {
+        font-size: 1.8vw;
+    }
+    .logo-badge img.logo {
+        right: .75vw;
+    }
+    .intro .brand-heading, 
+    .agenda-date {
+        font-size: 6vw;
+    }    
+    .agenda-body .brand-heading {
+        font-size: 10vw;
+    }
+    .agenda-body .brand-caption {
+        font-size: 4vw;
+    }
+    .agenda-address, 
+    .agenda-details table td,
+    .bios .bio-img + figcaption,
+    .notes .header {
+        font-size: 2.8vw;
+    }
+    .bios-title, 
+    /*.getsocial .row:nth-child(2),*/ 
+    .tagline {
+        font-size: 3.4vw;
+    }
+    .bios .speaker-bio,
+    .getsocial,
+    .notes .note {
+        font-size: 2.3vw;
+    }
+    .disclaimer-body {
+        font-size: 1vw;
+    }
+}
+
+@media(min-width:768px) {
+   .page {
+        /*height: 100%;*/
+        padding: 0;
+    }
+}
+
+
+/* START: Trying to fix old (non-retina) iOS browser with img only showing left half */ 
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+  html,
+  body{
+    width: 100%;
+    overflow-x:hidden;
+  }
+ .page {
+    /*background: url(../img/intro-bg2-1024w.jpg) no-repeat top center scroll;*/
+    background: url(../_img/bgposter.jpg) no-repeat top center scroll;
+  }
+}
+/* END */

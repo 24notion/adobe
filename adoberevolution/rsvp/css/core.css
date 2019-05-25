@@ -1,0 +1,222 @@
+﻿@font-face {
+    font-family: "Bebas Bold";
+    src: url('../font/BebasNeue Bold.ttf') format("truetype");
+}
+@font-face {
+    font-family: "Bebas Regular";
+    src: url('../font/BebasNeue Regular.ttf') format("truetype");
+}
+@font-face {
+    font-family: "Bebas Light";
+    src: url('../font/BebasNeue Light.ttf') format("truetype");
+}
+@font-face {
+    font-family: "Bebas Thin";
+    src: url('../font/BebasNeue Thin.ttf') format("truetype");
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    width:100%;
+    height: 100%;
+    font-family: Arial,Helvetica,"Helvetica Neue",sans-serif;
+    color: #fff;
+    margin: -20px 0 0 0;
+    background-color: #270A0C;
+}
+
+.bebas-bold { 
+    font-family: "Bebas Bold", Arial, sans-serif;
+}
+.bebas-light { 
+    font-family: "Bebas Light", Arial, sans-serif;
+}
+.bebas-thin { 
+    font-family: "Bebas Thin", Arial, sans-serif;
+}
+.bebas { 
+    font-family: "Bebas Regular", Arial, sans-serif;
+}
+
+a:link.nohighlight, a:visited.nohighlight, a:hover.nohighlight, a:active.nohighlight {
+    text-decoration: none;
+    border-bottom: 0 transparent solid;
+}
+
+.sectionnav img.arrow-down {
+    height: auto;
+    min-height: 16px;
+    min-width: 20px;
+    width: 15%;
+    width: 4vw;
+    max-width: 34px;
+    margin-top: 12px;
+}
+
+.intro {
+    /*display: table;*/
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;    
+    background-color: #000;
+    background: url(../img/intro-bg2.jpg) no-repeat top center scroll; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.intro-body img.logo {
+    width: 45vw;
+    max-width: 376px;
+    min-width: 130px;
+    height: auto;
+}
+
+.intro-body #presentation_link {
+	text-decoration: underline;
+	color: inherit;
+}
+
+.intro-body #presentation_link ~ small {
+	margin-left: 3px;
+	color: inherit;
+}
+
+.brand-heading {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 5vw;
+}
+
+.agenda-body {
+    margin-top: 18px;
+}
+
+.intro .shader {
+    background-color: #000;
+    background: rgb(0, 0, 0); /* Fall-back for browsers that don't support rgba */
+    background: rgba(0, 0, 0, .55);
+}
+
+.agenda-body .shader {
+    padding: 10px 40px 12px;
+}
+
+.agenda-body .brand-heading {
+    font-size: 8vw;
+}
+
+.agenda-body .brand-caption {
+    text-transform: uppercase;
+    font-size: 3vw;
+}
+
+.agenda-date {
+    font-size: 4vw;
+}
+
+.agenda-address {
+    font-size: 1.8vw;
+}
+
+.agenda-details {
+    padding-top: 20px;
+    font-size: 1.8vw;
+}
+
+.agenda-details table td {
+    vertical-align: top;
+    padding: 6px 0;
+}
+
+.agenda-details table td:nth-child(1) {
+    width: 108px;
+}
+
+.agenda-details table td:nth-child(2) {
+    width: 36px;
+}
+
+.strip-text img {
+    margin-top: 32px;
+    width: 100%;
+}
+
+.bios {
+    margin-top: 40px;
+}
+.bios-title {
+    margin-bottom: 32px;
+    margin-left: -16px;
+}
+.bios .speaker {
+    margin-top: 42px;
+}
+.bios .bio-img {
+    margin: 0px 24px 16px 0px;
+    max-width: 200px;
+}
+.bios .speaker-bio {
+    line-height: 2.3rem;
+    font-size: 1.75rem;
+}
+
+.disclaimer-body {
+    margin-top: 80px;
+    font-size: .68em;
+}
+
+@media(max-width:767px) {
+
+    .brand-heading {
+        font-size: 6vw;
+    }
+    .agenda-body .brand-heading {
+        font-size: 10vw;
+    }
+    .agenda-body .brand-caption {
+        font-size: 4vw;
+    }
+    .agenda-date {
+        font-size: 6vw;
+    }
+    .agenda-address, .agenda-details {
+        font-size: 2.8vw;
+    }
+    .strip-text img {
+        margin-top: auto;
+    }
+}
+
+@media(min-width:768px) {
+    .intro {
+        /*height: 100%;*/
+        padding: 0;
+    }
+}
+
+
+/* START: Trying to fix old (non-retina) iOS browser with img only showing left half */ 
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+  html,
+  body{
+    width: 100%;
+    overflow-x:hidden;
+  }
+  .intro {
+    background: url(../img/intro-bg2-1024w.jpg) no-repeat top center scroll;
+  }
+}
+/* END */
