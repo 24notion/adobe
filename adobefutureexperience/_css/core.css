@@ -44,6 +44,16 @@ body {
     font-family: "Bebas Regular", Arial, sans-serif;
 }
 
+h1 { font-size: 3.8em; }
+h2 { font-size: 2.8em; }
+h3 { font-size: 2.0em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 0.9em; }
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.15;
+}
+
 a:link.nohighlight, a:visited.nohighlight, a:hover.nohighlight, a:active.nohighlight {
     text-decoration: none;
     border-bottom: 0 transparent solid;
@@ -179,6 +189,9 @@ a:link.nohighlight, a:visited.nohighlight, a:hover.nohighlight, a:active.nohighl
     font-size: 1.2vw;
     color: #d4c9b9;
 }
+.getsocial .header {
+    font-size: 1.5em;    
+}
 .getsocial .graphical {
     margin-bottom: 12px;
 }
@@ -286,7 +299,7 @@ a:link.nohighlight, a:visited.nohighlight, a:hover.nohighlight, a:active.nohighl
   html,
   body{
     width: 100%;
-    overflow-x:hidden;
+    overflow-x: hidden;
   }
  .page {
     /*background: url(../img/intro-bg2-1024w.jpg) no-repeat top center scroll;*/
